@@ -1,5 +1,7 @@
 # Cryptopan
 
+[![Build Status](https://travis-ci.org/pwood/cryptopan.svg?branch=master)](https://travis-ci.org/pwood/cryptopan)
+
 This is a ruby implementation of the Crypto-PAn function providing prefix
 consistency while anonymising IP addresses. This program is based on the paper
 "Prefix-Preserving IP Address Anonymization: Measurement-based
