@@ -27,14 +27,16 @@ Or install it yourself as:
 
 *Note* Currently only supports IPv4 addresses.
 
-```2.0.0-p598 :001 > key = SecureRandom.random_bytes(32).bytes
+```
+2.0.0-p598 :001 > key = SecureRandom.random_bytes(32).bytes
  => [27, 8, 236, 31, 47, 181, 230, 41, 198, 24, 254, 3, 151, 151, 200, 75, 255, 197, 170, 3, 235, 236, 200, 41, 12, 10, 206, 127, 203, 162, 176, 206]
 2.0.0-p598 :002 > c = CryptoPAn.new(key)
  => #<CryptoPAn:0x0000000349b350 @key="\e\b\xEC\x1F/\xB5\xE6)\xC6\x18\xFE\x03\x97\x97\xC8K", @pad=[214, 202, 47, 81, 14, 48, 182, 196, 30, 19, 88, 145, 215, 2, 249, 52]>
 2.0.0-p598 :003 > c.anonymise("8.8.8.8")
  => "50.54.20.240"
 2.0.0-p598 :004 > c.anonymise("8.8.4.4")
- => "23.248.11.251"````
+ => "23.248.11.251"
+```
 
 ## Development
 
@@ -44,7 +46,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/cryptopan.
+Bug reports and pull requests are welcome on GitHub at https://github.com/pwood/cryptopan.
 
 
 ## References
