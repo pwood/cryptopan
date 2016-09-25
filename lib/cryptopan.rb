@@ -19,7 +19,7 @@ class CryptoPAn
   def anonymise(ip)
     long_ip = NetAddr.ip_to_i ip
 
-    encrypt_input = @pad
+    encrypt_input = @pad.dup
 
     long_pad = @pad[0].to_i << 24
     long_pad += @pad[1].to_i << 16

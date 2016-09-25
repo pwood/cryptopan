@@ -35,7 +35,7 @@ Or install it yourself as:
 2.0.0-p598 :003 > c.anonymise("8.8.8.8")
  => "50.54.20.240"
 2.0.0-p598 :004 > c.anonymise("8.8.4.4")
- => "23.248.11.251"
+ => "50.54.28.11"
 ```
 
 ## Development

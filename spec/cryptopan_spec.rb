@@ -14,4 +14,16 @@ describe CryptoPAn do
       expect(actualOutput).to eq(test[1])
     end
   end
+
+  it "does not currupt internal state such after use" do
+    key = SecureRandom.random_bytes(32).bytes
+
+    ip = "8.8.8.8"
+
+    cryptopan = CryptoPAn.new(key)
+    first = cryptopan.anonymise(ip)
+    second = cryptopan.anonymise(ip)
+
+    expect(first).to eq(second)
+  end
 end
